@@ -38,7 +38,7 @@ function setPassword(prop, length) {
 
 
   if (prop.length == 0) {
-    console.log('هیچ ویژگی انتخاب نشده است');
+        alert('هیچ ویژگی انتخاب نشده است')
   }
   else {
 
