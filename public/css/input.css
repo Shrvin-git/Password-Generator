@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "Sans-Regular";
+  src: url(../fonts/Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Medium";
+  src: url(../fonts/Sans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Sans-DemiBold";
+  src: url(../fonts/Sans-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Bold";
+  src: url(../fonts/Sans-Bold.ttf);
+}
+
+body {
+  @apply flex items-center justify-center h-screen w-full flex-col gap-5 text-white font-Sans-Regular;
+}
+
+.newsletter {
+  @apply relative isolate overflow-hidden rounded-3xl bg-gray-900 py-16 sm:py-24 lg:py-32;
+}
+
+.toast {
+  @apply flex transition-all overflow-hidden duration-300 shadow-xl items-center gap-3 fixed top-4 left-4 bg-zinc-900 px-6 py-4 rounded;
+}
+
+.icon {
+  @apply size-12 text-3xl flex items-center justify-center rounded text-emerald-500 bg-emerald-500/10;
+}
+
+.toast.hidden {
+  @apply -left-96;
+}
+
+.process-bar {
+  @apply w-full bottom-0 right-0 absolute h-1.5 bg-emerald-500/25 transition-all duration-300;
+}
+
+.process {
+  @apply absolute transition-all duration-300 w-3/5 bg-emerald-600 right-0 top-0 h-full;
+}
